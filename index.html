@@ -96,7 +96,7 @@
 }
     .picture3{
       max-width: 350px;
-      display: block;
+      height: auto;
     }
       .bottom-bar {
       width: 100%;
@@ -110,7 +110,7 @@
       height: 10px;
       margin-top: 30px;
       background: linear-gradient(to right, #FFD800, #802707);
-      border-radius: 4px;
+     
     }
    .Aboutme, .Skills{
       font-family: "Monoton", sans-serif;
@@ -125,7 +125,12 @@
   .Skills{
     text-align: center;
   }
-  
+  .aboutme-section {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
   .aboutme-text {
   max-width: 500px; 
   color: #FFFFFF;
@@ -140,7 +145,7 @@
     margin-top: 20px;
   }
   .skill-box{
-    background: liner-gradeint(to right, #FFD800, #802707);
+    background: linear-gradeint(to right, #FFD800, #802707);
     height: 150px;
     border-radius: 12px;
     display: flex;
@@ -197,12 +202,12 @@
   
 
   <img src="picture3.jpg" alt="picture3 Image" class="picture3">
-
+  </div>
   
      <div class="line"></div>
 
     <div class="Skills">Skills</div>
-       <div class="Skills-grid"></div>
+       <div class="Skills-grid">
      <div class="skill-box">Branding</div>
     <div class="skill-box">Illustration</div>
     <div class="skill-box">Logo Design</div>
