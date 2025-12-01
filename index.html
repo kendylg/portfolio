@@ -37,8 +37,7 @@
       z-index: 1000;
     }
      .name img {
-      width: 150px;    
-      height: auto;   
+      width: 150px;     
       display: block; 
     }
 
@@ -80,9 +79,23 @@
     width: 100%;
     display: block;
   }
+  .picture1-container { 
+    position: relative; }
+  .picture1-container img { 
+    width: 100%; display: block; }
+  
+  #site-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Monoton", sans-serif;
+  color: #FB8A41;
+  font-size: 60px;  
+  text-align: center;
+}
     .picture3{
-      max-width: 800px;
-      margin: 30px auto 0 auto;
+      max-width: 350px;
       display: block;
     }
       .bottom-bar {
@@ -158,6 +171,8 @@
         <li><a href="#conact">Conact Me</a></li>
       </ul>
     </nav>
+    
+  <div class="picture1-container">
 
         <img src="Picture1.png.PNG" alt="Portfolio Image">
         <h1 id="site-title">portfolio</h1>
@@ -171,7 +186,7 @@
     <div class="line"></div>
     
      <div class="Aboutme">About Me</div>
-
+     <div class="aboutme-section">
    
      <div class="aboutme-text">
     <p>My name is Kendyl Gill, I currently attend University of Waterloo for GBDA, and I’ve been interested in all types of art since I was little.</p>
@@ -180,21 +195,22 @@
     <p>My main design interests are branding, logos, illustration, clothing design and social media content.</p>
   </div>
   
-    <div class="picture3-container">
+
   <img src="picture3.jpg" alt="picture3 Image" class="picture3">
-</div>
+
   
      <div class="line"></div>
 
     <div class="Skills">Skills</div>
-  <div class="Skills-grid">
+       <div class="Skills-grid"></div>
      <div class="skill-box">Branding</div>
     <div class="skill-box">Illustration</div>
     <div class="skill-box">Logo Design</div>
     <div class="skill-box">Social Media</div>
     <div class="skill-box">Clothing Design</div>
     <div class="skill-box">UI/UX</div>
-  </div>
-
+       </div>
+    
+       </div>
 </body>
 </html>
