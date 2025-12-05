@@ -1,486 +1,520 @@
  <!DOCTYPE html>
-<html lang="EN">
-<head>
-    <meta charset="UTF-8">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+ <html lang="EN">
+   <head>
+     <meta charset="UTF-8">
+     <title>Portfolio</title>
+     <link rel="stylesheet" href="style.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Monoton&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Monoton&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
-<style>
-    html{
-      font-size: 25px;
-    }
-    body{
-      
-      background-color: #000000;
-      margin: 0;
-      font-family: "Roboto Condensed", sans-serif;
-      color: #222; 
-  }
-   
-  .main-container{
-    max-width: 1220px;
-    margin: 120px auto;
-    padding: 0 20px;
-  }
-  .Top-bar {
-      width: 100%;
-      height: 30px;       
-      background-color: #000000;
-      opacity: 0.5;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-    }
-     .name img {
-      width: 150px;     
-      display: block; 
-    }
+     <style>
+       html {
+         font-size: 25px;
+       }
 
-    .name{
-      position: fixed;
-      top: 10px;
-      left: 10px;
-      z-index: 1200;
-    }
-   nav{
-      position: fixed;
-      top: 0;
-      right: 30px;
-      height: 30px;
-      display: flex; 
-      align-items: center;
-      z-index: 1100;
-    }
+       body {
 
-    nav ul{
-      list-style: none;
-      display: flex;
-      gap: 25px;
-      margin: 0;
-      padding: 0;
-    }
+         background-color: #000000;
+         margin: 0;
+         font-family: "Roboto Condensed", sans-serif;
+         color: #222;
+       }
 
-    nav a{
-      color: #FB8A41;
-      font-family: "Lilita One", sans-serif;
-      text-decoration: none;
-    }
+       .main-container {
+         max-width: 1220px;
+         margin: 120px auto;
+         padding: 0 20px;
+       }
 
-    nav a:hover {
-      opacity: 0.7;
-    }
+       .Top-bar {
+         width: 100%;
+         height: 30px;
+         background-color: #000000;
+         opacity: 0.5;
+         position: fixed;
+         top: 0;
+         left: 0;
+         z-index: 1000;
+       }
 
-  img{
-    width: 100%;
-    display: block;
-  }
-  .picture1-container { 
-    position: relative; }
-  .picture1-container img { 
-    width: 100%; display: block; }
-  
-  #site-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "Monoton", sans-serif;
-  color: #FB8A41;
-  font-size: 60px;  
-  text-align: center;
-}
-    .picture3{
-      max-width: 650px;
-      height: auto;
-    }
-      .bottom-bar {
-      width: 100%;
-      height: 20px;       
-      background-color: #802707;
-      margin: 0 auto;     
-    }
-  
-   .line{
-      width: 100%;
-      height: 10px;
-      margin-top: 30px;
-      background: linear-gradient(to right, #FFD800, #802707);
-     
-    }
-   .Aboutme, .Skills{
-      font-family: "Monoton", sans-serif;
-      font-size: 50px;
-      color: #FB8A41; 
-      text-align: left;
-      margin: 30px;
-    }
-  .Aboutme {
-    text-align: left;
-  }
-  .Skills{
-    text-align: center;
-  }
-  .aboutme-section {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  margin-top: 20px;
-}
-  .aboutme-text {
-  max-width: 500px; 
-  color: #FFFFFF;
-  font-family: "Rubik", sans-serif;
-  font-size: 20px;
-  line-height: 1.5;
-}
-  .Skills-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 20px;
-  }
-  .skill-box{
-    background: linear-gradient(to right, #FF360C, #FFD800);
-    height: 150px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Rubik", sans-serif;
-    color: #000000;
-    font-size: 24px;
-    text-align: center;
-  
-  }
-  .skills-description {
-  width: 100%;
-  text-align: left;
-  max-width: 1000px;
-  margin: 0 auto;
-  font-size: 20px;
-  line-height: 1.6;
-  color: #FFFFFF;
-  margin-top: 20px;
-}
-  .Picture41 {
-  width: 100%;
-  display: block;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-  .section-title {
-    font-family: "Monoton", sans-serif;
-    font-size: 50px;      
-    color: #FB8A41;     
-    text-align: center;   
-    margin: 30px;
-}
-  .projects-description {
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto 0 auto;  
-    text-align: left;
-    font-family: "Rubik", sans-serif;
-    font-size: 20px;
-    color: #ffffff;
-    line-height: 1.6;
-}
-  .Magazine-Design{
-      font-family: "Monoton", sans-serif;
-      font-size: 50px;
-      color: #FB8A41; 
-      text-align: left;
-      margin: 30px;
-  }
-  .picture5-container {
-    width: 100%;
-    margin-top: 30px;
-}
+       .name img {
+         width: 150px;
+         display: block;
+       }
 
-.picture5 {
-    width: 100%;
-    display: block;
-}
-  .project2-description {
-    width: 100%;
-    max-width: 1000px;
-    margin: 20px auto 0 auto;  
-    text-align: left;
-    font-family: "Rubik", sans-serif;
-    font-size: 20px;
-    color: #ffffff;
-    line-height: 1.6;
-}
-   .Picture6-container {
-    width: 100%;
-    margin-top: 30px;
-}
+       .name {
+         position: fixed;
+         top: 10px;
+         left: 10px;
+         z-index: 1200;
+       }
 
-.Picture6 {
-    width: 100%;
-    display: block;
-}
-   .Website-Redeisgn{
-      font-family: "Monoton", sans-serif;
-      font-size: 50px;
-      color: #FB8A41; 
-      text-align: left;
-      margin: 30px;
-  }
-  .laptop-section {
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
+       nav {
+         position: fixed;
+         top: 0;
+         right: 30px;
+         height: 30px;
+         display: flex;
+         align-items: center;
+         z-index: 1100;
+       }
 
-.laptop-image {
-    width: 600px;
-    max-width: 100%;
-    display: block;
-}
+       nav ul {
+         list-style: none;
+         display: flex;
+         gap: 25px;
+         margin: 0;
+         padding: 0;
+       }
 
-.laptop-text {
-    flex: 1;
-    color: #FFFFFF;
-    font-family: "Rubik", sans-serif;
-    font-size: 20px;
-    line-height: 1.6;
-}
-.two-pictures-section {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    margin: 40px 30px; 
-}
+       nav a {
+         color: #FB8A41;
+         font-family: "Lilita One", sans-serif;
+         text-decoration: none;
+       }
 
-.two-pictures-section img {
-    width: 50%;
-    height: auto;
-    display: block;
-}
-  .Resume{
-      font-family: "Monoton", sans-serif;
-      font-size: 50px;
-      color: #FB8A41; 
-      text-align: center;
-      margin: 30px;
-  }
-  .Contact-Me{
-      font-family: "Monoton", sans-serif;
-      font-size: 50px;
-      color: #FB8A41; 
-      text-align: center;
-      margin: 30px;
-  }
-  .resume-link {
-    text-align: center;
-    margin-top: 10px;
-    font-style: italic;
-}
+       nav a:hover {
+         opacity: 0.7;
+       }
 
-.resume-link a {
-    color: #FFFFFF;      
-    text-decoration: none;
-    font-size: 24px;
-    font-family: "Rubik", sans-serif;
-}
+       img {
+         width: 100%;
+         display: block;
+       }
 
-.resume-link a:hover {
-    opacity: 0.7;
-  }
-  .contact-boxes {
-    display: flex;
-    justify-content: center;  
-    gap: 40px;                
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
+       .picture1-container {
+         position: relative;
+       }
 
-.contact-box {
-    background: linear-gradient(to right, #FF360C, #FFD800);
-    width: 250px;         
-    height: 150px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-}
+       .picture1-container img {
+         width: 100%;
+         display:
+           block;
+       }
 
-.contact-title {
-    font-family: "Monoton", sans-serif;
-    font-size: 22px;
-    color: #000000;
-    margin-bottom: 10px;
-}
+       #site-title {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         font-family: "Monoton", sans-serif;
+         color: #FB8A41;
+         font-size: 60px;
+         text-align: center;
+       }
 
-.contact-link {
-    font-family: "Rubik", sans-serif;
-    color: #000000;
-    text-decoration: none;
-    font-size: 18px;
-}
+       .picture3 {
+         max-width: 650px;
+         height: auto;
+       }
 
-.contact-link:hover {
-    opacity: 0.7;
-}
-</style>
-</head>
+       .bottom-bar {
+         width: 100%;
+         height: 20px;
+         background-color: #802707;
+         margin: 0 auto;
+       }
 
-<body>
-  <div class="main-container">
-     <div class="Top-bar"></div>
-   <div class="name">
-        <img src="name.png.png" alt="name Image">
-    </div>
-  
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
-    
-  <div class="picture1-container">
+       .line {
+         width: 100%;
+         height: 10px;
+         margin-top: 30px;
+         background: linear-gradient(to right, #FFD800, #802707);
 
-        <img src="Picture1.png.PNG" alt="Portfolio Image">
-        <h1 id="site-title">portfolio</h1>
-    </div>
+       }
 
-    <div class="bottom-bar"></div>
-    
- 
-    <img src="Picture2.png" alt="Picture 2"> 
-    
-    <div class="line"></div>
-    
-     <div id="about" class="Aboutme">About Me</div>
-     <div class="aboutme-section">
-   
-     <div class="aboutme-text">
-    <p>My name is Kendyl Gill, I currently attend University of Waterloo for GBDA, and I’ve been interested in all types of art since I was little.</p>
-    <p>I attended Eastwood Collegiate Institute, an arts-oriented high school, where I was part of the Visual Arts program. I became interested in graphic design and business during my second year of high school and from then on I knew this is what I wanted to do.</p>
-    <p>Outside of school I work as a team lead at Roots, and often sell merchandise for country musicians during the summer.</p>
-    <p>My main design interests are branding, logos, illustration, clothing design and social media content.</p>
-  </div>
-  
+       .Aboutme,
+       .Skills {
+         font-family: "Monoton", sans-serif;
+         font-size: 50px;
+         color: #FB8A41;
+         text-align: left;
+         margin: 30px;
+       }
 
-  <img src="picture3.jpg" alt="picture3 Image" class="picture3">
-  </div>
-  
-     <div class="line"></div>
+       .Aboutme {
+         text-align: left;
+       }
 
-   <div id="skills" class="Skills">Skills</div>
-       <div class="Skills-grid">
-     <div class="skill-box">Figma</div>
-    <div class="skill-box">Procreate</div>
-    <div class="skill-box">In Design</div>
-    <div class="skill-box">Primiere</div>
-    <div class="skill-box">Illustrator</div>
-    <div class="skill-box">Photoshop</div>
+       .Skills {
+         text-align: center;
+       }
+
+       .aboutme-section {
+         display: flex;
+         gap: 40px;
+         align-items: flex-start;
+         margin-top: 20px;
+       }
+
+       .aboutme-text {
+         max-width: 500px;
+         color: #FFFFFF;
+         font-family: "Rubik", sans-serif;
+         font-size: 20px;
+         line-height: 1.5;
+       }
+
+       .Skills-grid {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 30px;
+         margin-top: 20px;
+       }
+
+       .skill-box {
+         background: linear-gradient(to right, #FF360C, #FFD800);
+         height: 150px;
+         border-radius: 12px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-family: "Rubik", sans-serif;
+         color: #000000;
+         font-size: 24px;
+         text-align: center;
+
+       }
+
+       .skills-description {
+         width: 100%;
+         text-align: left;
+         max-width: 1000px;
+         margin: 0 auto;
+         font-size: 20px;
+         line-height: 1.6;
+         color: #FFFFFF;
+         margin-top: 20px;
+       }
+
+       .Picture41 {
+         width: 100%;
+         display: block;
+         margin-top: 40px;
+         margin-bottom: 40px;
+       }
+
+       .section-title {
+         font-family: "Monoton", sans-serif;
+         font-size: 50px;
+         color: #FB8A41;
+         text-align: center;
+         margin: 30px;
+       }
+
+       .projects-description {
+         width: 100%;
+         max-width: 1000px;
+         margin: 20px auto 0 auto;
+         text-align: left;
+         font-family: "Rubik", sans-serif;
+         font-size: 20px;
+         color: #ffffff;
+         line-height: 1.6;
+       }
+
+       .Magazine-Design {
+         font-family: "Monoton", sans-serif;
+         font-size: 50px;
+         color: #FB8A41;
+         text-align: left;
+         margin: 30px;
+       }
+
+       .picture5-container {
+         width: 100%;
+         margin-top: 30px;
+       }
+
+       .picture5 {
+         width: 100%;
+         display: block;
+       }
+
+       .project2-description {
+         width: 100%;
+         max-width: 1000px;
+         margin: 20px auto 0 auto;
+         text-align: left;
+         font-family: "Rubik", sans-serif;
+         font-size: 20px;
+         color: #ffffff;
+         line-height: 1.6;
+       }
+
+       .Picture6-container {
+         width: 100%;
+         margin-top: 30px;
+       }
+
+       .Picture6 {
+         width: 100%;
+         display: block;
+       }
+
+       .Website-Redeisgn {
+         font-family: "Monoton", sans-serif;
+         font-size: 50px;
+         color: #FB8A41;
+         text-align: left;
+         margin: 30px;
+       }
+
+       .laptop-section {
+         display: flex;
+         align-items: flex-start;
+         gap: 40px;
+         margin-top: 30px;
+         margin-bottom: 40px;
+       }
+
+       .laptop-image {
+         width: 600px;
+         max-width: 100%;
+         display: block;
+       }
+
+       .laptop-text {
+         flex: 1;
+         color: #FFFFFF;
+         font-family: "Rubik", sans-serif;
+         font-size: 20px;
+         line-height: 1.6;
+       }
+
+       .two-pictures-section {
+         display: flex;
+         justify-content: space-between;
+         gap: 40px;
+         margin: 40px 30px;
+       }
+
+       .two-pictures-section img {
+         width: 50%;
+         height: auto;
+         display: block;
+       }
+
+       .Resume {
+         font-family: "Monoton", sans-serif;
+         font-size: 50px;
+         color: #FB8A41;
+         text-align: center;
+         margin: 30px;
+       }
+
+       .Contact-Me {
+         font-family: "Monoton", sans-serif;
+         font-size: 50px;
+         color: #FB8A41;
+         text-align: center;
+         margin: 30px;
+       }
+
+       .resume-link {
+         text-align: center;
+         margin-top: 10px;
+         font-style: italic;
+       }
+
+       .resume-link a {
+         color: #FFFFFF;
+         text-decoration: none;
+         font-size: 24px;
+         font-family: "Rubik", sans-serif;
+       }
+
+       .resume-link a:hover {
+         opacity: 0.7;
+       }
+
+       .contact-boxes {
+         display: flex;
+         justify-content: center;
+         gap: 40px;
+         margin-top: 20px;
+         margin-bottom: 40px;
+       }
+
+       .contact-box {
+         background: linear-gradient(to right, #FF360C, #FFD800);
+         width: 250px;
+         height: 150px;
+         border-radius: 12px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         padding: 20px;
+       }
+
+       .contact-title {
+         font-family: "Monoton", sans-serif;
+         font-size: 22px;
+         color: #000000;
+         margin-bottom: 10px;
+       }
+
+       .contact-link {
+         font-family: "Rubik", sans-serif;
+         color: #000000;
+         text-decoration: none;
+         font-size: 18px;
+       }
+
+       .contact-link:hover {
+         opacity: 0.7;
+       }
+     </style>
+   </head>
+
+   <body>
+     <div class="main-container">
+       <div class="Top-bar"></div>
+       <div class="name">
+         <img src="name.png.png" alt="name Image">
        </div>
-    <div class="skills-description">
-    I bring a strong mix of visual design, digital creativity, and problem-solving to my work. 
-    My skills range from branding, illustration, and layout design to interactive media and digital art. 
-    I’m experienced with Adobe Creative Cloud, Figma, and web-based tools, and I enjoy using design thinking 
-    to turn ideas into polished, engaging visuals. I’m always exploring new techniques.
-</div>
-     <div class="line"></div>
-       
- 
-  <img src="Picture41.png" alt="Picture 41" class="Picture41">
 
- <div id="projects" class="section-title">Projects</div>
-  <div class="projects-description">
-    My projects show my interest in both editorial and digital design. 
-    I created Irreplaceable, a magazine that focuses on identity and uses clean layouts 
-    and visuals to tell a story. I also redesigned a website for \Kentucky, giving it a more 
-    modern look and making it easier to navigate. These projects reflect my style and the design 
-    skills I’m continuing to grow.
-</div>
- 
-  <img src="Picture41.png" alt="Picture 41" class="Picture41">
+       <nav>
+         <ul>
+           <li><a href="#about">About Me</a></li>
+           <li><a href="#skills">Skills</a></li>
+           <li><a href="#projects">Projects</a></li>
+           <li><a href="#contact">Contact Me</a></li>
+         </ul>
+       </nav>
 
-   <div class="line"></div>
-      
-    <div class="Magazine-Design">1. Magazine Design</div>
-   <div class="line"></div>
-    <div class="picture5-container">
-    <img src="Picture5.png" alt="Picture 5" class="picture5">
-</div>
-    <div class="line"></div>
-    <div class="project2-description">
-      <p>
-        This magazine design explores the importance of life and why it is truly irreplaceable. To open the magazine, I used a quote from J. Cole—“no such thing as a life that’s better than yours”—because it captures the message I wanted to express. Throughout the magazine, I highlight different parts of life using images, layout choices, and visual storytelling. The “Living Fast” page features a photo of my friend’s car to represent youth and the desire to move quickly through life. The second spread focuses on experiences and includes a picture of my dad skiing, showing how moments like these shape who we are. I also included a section called “Life on Film,” emphasizing how important it is to document memories as life moves fast—physical photos make those moments feel more personal. Finally, I added a “Nightlife” section, reflecting a big part of many young people’s lives and using bold visuals to capture that energy. </p>
-      
-    </div>
-    <div class="line"></div>
-     <div class="picture6-container">
-    <img src="Picture6.jpg" alt="Picture 6" class="Picture6">
-    </div>
-     <div class="line"></div>
-     <img src="Picture41.png" alt="Picture 41" class="Picture41">
-     <div class="Website-Redeisgn">2. Website  Redisgn</div>
-<div class="laptop-section">
-    <img src="Picture7.png" alt="Laptop Mockup" class="laptop-image">
+       <div class="picture1-container">
 
-    <div class="laptop-text">
-        For my Kentucky website redesign, I focused on giving the brand a fresher and more modern look. I improved the layout to make information easier to find and created a cleaner visual style with updated colors, typography, and images. My goal was to make the site feel more organized, welcoming, and user-friendly while still keeping the original identity of Kentucky. This project helped me explore web design, visual hierarchy, and how small design decisions can make a website much easier to use.
-    </div>
-    </div>
-    
-  <div class="line"></div>
-    
-  <div class="two-pictures-section">
-    <img src="Picture8.png" alt="Picture 8">
-    <img src="Picture9.png" alt="Picture 9">
-</div>
-    <div class="two-pictures-section">
-    <img src="Picture10.png" alt="Picture 10">
-    <img src="Picture11.png" alt="Picture 11">
-</div>
-    <div class="two-pictures-section">
-    <img src="Picture12.png" alt="Picture 12">
-    <img src="Picture13.png" alt="Picture 13">
-</div>
-    <div class="project2-description">
-      My Kentucky website redesign focused on bringing more clarity and personality to the brand’s online presence. I reorganized the pages to make information easier to explore and introduced a layout that feels more open and approachable. I also refreshed the visuals by choosing cleaner fonts, brighter images, and a more consistent style. The redesign aims to make the site feel welcoming, modern, and easier for users to connect with.</div>
-    <img src="Picture41.png" alt="Picture 41" class="Picture41">
-   
-    <div class="Resume">Resume</div>
+         <img src="Picture1.png.PNG" alt="Portfolio Image">
+         <h1 id="site-title">portfolio</h1>
+       </div>
 
-    <div class="resume-link">
-    <i>  <a href="Kendyl_Gill_Resume.pdf" target="_blank">Kendyl's Resume</a></i>
-    </div>
-     <img src="Picture41.png" alt="Picture 41" class="Picture41">
-     <div id="contact" class="Contact-Me">Contact Me</div>
-    <div class="contact-boxes">
-    <div class="contact-box">
-        <div class="contact-title">Email Address</div>
-        <a href="mailto:k24gill@uwaterloo.ca" class="contact-link">k24gill@uwaterloo.ca</a>
-    </div>
+       <div class="bottom-bar"></div>
 
-    <div class="contact-box">
-        <div class="contact-title">LinkedIn</div>
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="contact-link">LinkedIn Profile</a>
-    </div>
-      
-</div>
-<div class="line"></div>
-  </div>
-    
-  
-</body>
-</html>
 
+       <img src="Picture2.png" alt="Picture 2">
+
+       <div class="line"></div>
+
+       <div id="about" class="Aboutme">About Me</div>
+       <div class="aboutme-section">
+
+         <div class="aboutme-text">
+           <p>My name is Kendyl Gill, I currently attend University of Waterloo for GBDA, and I’ve been interested in all types of art since I was little.</p>
+           <p>I attended Eastwood Collegiate Institute, an arts-oriented high school, where I was part of the Visual Arts program. I became interested in graphic design and business during my second year of high school and from then on I knew this is what I wanted to do.</p>
+           <p>Outside of school I work as a team lead at Roots, and often sell merchandise for country musicians during the summer.</p>
+           <p>My main design interests are branding, logos, illustration, clothing design and social media content.</p>
+         </div>
+
+
+         <img src="picture3.jpg" alt="picture3 Image" class="picture3">
+       </div>
+
+       <div class="line"></div>
+
+       <div id="skills" class="Skills">Skills</div>
+       <div class="Skills-grid">
+         <div class="skill-box">Figma</div>
+         <div class="skill-box">Procreate</div>
+         <div class="skill-box">In Design</div>
+         <div class="skill-box">Primiere</div>
+         <div class="skill-box">Illustrator</div>
+         <div class="skill-box">Photoshop</div>
+       </div>
+       <div class="skills-description">
+         I bring a strong mix of visual design, digital creativity, and problem-solving to my work.
+         My skills range from branding, illustration, and layout design to interactive media and digital art.
+         I’m experienced with Adobe Creative Cloud, Figma, and web-based tools, and I enjoy using design thinking
+         to turn ideas into polished, engaging visuals. I’m always exploring new techniques.
+       </div>
+       <div class="line"></div>
+
+
+       <img src="Picture41.png" alt="Picture 41" class="Picture41">
+
+       <div id="projects" class="section-title">Projects</div>
+       <div class="projects-description">
+         My projects show my interest in both editorial and digital design.
+         I created Irreplaceable, a magazine that focuses on identity and uses clean layouts
+         and visuals to tell a story. I also redesigned a website for \Kentucky, giving it a more
+         modern look and making it easier to navigate. These projects reflect my style and the design
+         skills I’m continuing to grow.
+       </div>
+
+       <img src="Picture41.png" alt="Picture 41" class="Picture41">
+
+       <div class="line"></div>
+
+       <div class="Magazine-Design">1. Magazine Design</div>
+       <div class="line"></div>
+       <div class="picture5-container">
+         <img src="Picture5.png" alt="Picture 5" class="picture5">
+       </div>
+       <div class="line"></div>
+       <div class="project2-description">
+         <p>
+           This magazine design explores the importance of life and why it is truly irreplaceable. To open the magazine, I used a quote from J. Cole—“no such thing as a life that’s better than yours”—because it captures the message I wanted to express. Throughout the magazine, I highlight different parts of life using images, layout choices, and visual storytelling. The “Living Fast” page features a photo of my friend’s car to represent youth and the desire to move quickly through life. The second spread focuses on experiences and includes a picture of my dad skiing, showing how moments like these shape who we are. I also included a section called “Life on Film,” emphasizing how important it is to document memories as life moves fast—physical photos make those moments feel more personal. Finally, I added a “Nightlife” section, reflecting a big part of many young people’s lives and using bold visuals to capture that energy. </p>
+
+       </div>
+       <div class="line"></div>
+       <div class="picture6-container">
+         <img src="Picture6.jpg" alt="Picture 6" class="Picture6">
+       </div>
+       <div class="line"></div>
+       <img src="Picture41.png" alt="Picture 41" class="Picture41">
+       <div class="Website-Redeisgn">2. Website Redisgn</div>
+       <div class="laptop-section">
+         <img src="Picture7.png" alt="Laptop Mockup" class="laptop-image">
+
+         <div class="laptop-text">
+           For my Kentucky website redesign, I focused on giving the brand a fresher and more modern look. I improved the layout to make information easier to find and created a cleaner visual style with updated colors, typography, and images. My goal was to make the site feel more organized, welcoming, and user-friendly while still keeping the original identity of Kentucky. This project helped me explore web design, visual hierarchy, and how small design decisions can make a website much easier to use.
+         </div>
+       </div>
+
+       <div class="line"></div>
+
+       <div class="two-pictures-section">
+         <img src="Picture8.png" alt="Picture 8">
+         <img src="Picture9.png" alt="Picture 9">
+       </div>
+       <div class="two-pictures-section">
+         <img src="Picture10.png" alt="Picture 10">
+         <img src="Picture11.png" alt="Picture 11">
+       </div>
+       <div class="two-pictures-section">
+         <img src="Picture12.png" alt="Picture 12">
+         <img src="Picture13.png" alt="Picture 13">
+       </div>
+       <div class="project2-description">
+         My Kentucky website redesign focused on bringing more clarity and personality to the brand’s online presence. I reorganized the pages to make information easier to explore and introduced a layout that feels more open and approachable. I also refreshed the visuals by choosing cleaner fonts, brighter images, and a more consistent style. The redesign aims to make the site feel welcoming, modern, and easier for users to connect with.</div>
+       <img src="Picture41.png" alt="Picture 41" class="Picture41">
+
+       <div class="Resume">Resume</div>
+
+       <div class="resume-link">
+         <i> <a href="Kendyl_Gill_Resume.pdf" target="_blank">Kendyl's Resume</a></i>
+       </div>
+       <img src="Picture41.png" alt="Picture 41" class="Picture41">
+       <div id="contact" class="Contact-Me">Contact Me</div>
+       <div class="contact-boxes">
+         <div class="contact-box">
+           <div class="contact-title">Email Address</div>
+           <a href="mailto:k24gill@uwaterloo.ca" class="contact-link">k24gill@uwaterloo.ca</a>
+         </div>
+
+         <div class="contact-box">
+           <div class="contact-title">LinkedIn</div>
+           <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="contact-link">LinkedIn Profile</a>
+         </div>
+
+       </div>
+       <div class="line"></div>
+     </div>
+
+
+   </body>
+ </html>
