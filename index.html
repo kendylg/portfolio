@@ -10,12 +10,8 @@
      <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Monoton&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
      <style>
-       html {
-         font-size: 25px;
-       }
-
+       
        body {
-
          background-color: #000000;
          margin: 0;
          font-family: "Roboto Condensed", sans-serif;
@@ -37,6 +33,13 @@
          top: 0;
          left: 0;
          z-index: 1000;
+         /* <!--
+Code copied from: [https://www.w3schools.com/cssref/pr_pos_z-index.php]
+Author: [Wschool]
+Name: [z-index]
+Description: [allows the image is displayed behind the text]
+Date retrieved: [11/29/25]
+-->*/
        }
 
        .name img {
@@ -56,7 +59,8 @@
          top: 0;
          right: 30px;
          height: 30px;
-         display: flex; /*<!--Code copied from: [https://www.w3schools.com/cssref/css3_pr_flex.php] [Wschools]  [Flex] Description: [Let all the flexible items be the same length, regardless of its content] Date retrieved: [12/2/25]-->*/
+         display: flex;
+         /*<!--Code copied from: [https://www.w3schools.com/cssref/css3_pr_flex.php] [Wschools]  [Flex] Description: [Let all the flexible items be the same length, regardless of its content] Date retrieved: [12/2/25]-->*/
          align-items: center;
          z-index: 1100;
        }
@@ -72,26 +76,19 @@
        nav a {
          color: #FB8A41;
          font-family: "Lilita One", sans-serif;
-         text-decoration: none;
        }
 
        nav a:hover {
          opacity: 0.7;
        }
 
-       img {
-         width: 100%;
-         display: block;
-       }
-
        .picture1-container {
-         position: relative;
+         position: relative;/*<!--Code copied from: [https://www.w3schools.com/Css/css_positioning.asp] [Wschools]  [position: relative] Description: [ positioned relative to its normal position in the document flow] Date retrieved: [12/2/25]-->*/
        }
 
        .picture1-container img {
          width: 100%;
-         display:
-           block;
+         display: block;
        }
 
        #site-title {
@@ -99,6 +96,7 @@
          top: 50%;
          left: 50%;
          transform: translate(-50%, -50%);
+         /*<!--Code copied from: [https://www.w3schools.com/cssref/func_translate.php] [Wschools]  [CSS translate() Function] Description: [moves the element 50px along the x-axis, and 0px along the y-axis] Date retrieved: [12/2/25]-->*/
          font-family: "Monoton", sans-serif;
          color: #FB8A41;
          font-size: 60px;
@@ -122,6 +120,7 @@
          height: 10px;
          margin-top: 30px;
          background: linear-gradient(to right, #FFD800, #802707);
+         /*<!--Code copied from: [https://www.w3schools.com/cssref/func_linear-gradient.php] [Wschools]  [linear-gradient] Description: [This linear gradient starts at the top. It starts red, transitioning to yellow] [12/2/25]-->*/
 
        }
 
@@ -143,7 +142,7 @@
        }
 
        .aboutme-section {
-         display: flex; 
+         display: flex;
          gap: 40px;
          margin-top: 20px;
        }
@@ -153,12 +152,18 @@
          color: #FFFFFF;
          font-family: "Rubik", sans-serif;
          font-size: 20px;
-         line-height: 1.5;
        }
 
        .Skills-grid {
          display: grid;
-         grid-template-columns: repeat(3, 1fr);
+         grid-template-columns: 30% 30% 30%;
+         /*<!--
+Code copied from: [https://www.w3schools.com/cssref/pr_grid-template-columns.php]
+Author: [Wschool]
+Name: [grid-template-columns:]
+Description: [Makes a Grid container]
+Date retrieved: [12/-1/25]
+-->*/
          gap: 30px;
          margin-top: 20px;
        }
@@ -166,7 +171,6 @@
        .skill-box {
          background: linear-gradient(to right, #FF360C, #FFD800);
          height: 150px;
-         border-radius: 12px;
          display: flex;
          justify-content: center;
          align-items: center;
@@ -183,7 +187,6 @@
          max-width: 1000px;
          margin: 0 auto;
          font-size: 20px;
-         line-height: 1.6;
          color: #FFFFFF;
          margin-top: 20px;
        }
@@ -263,7 +266,6 @@
 
        .laptop-section {
          display: flex;
-         align-items: flex-start;
          gap: 40px;
          margin-top: 30px;
          margin-bottom: 40px;
@@ -283,7 +285,7 @@
        }
 
        .two-pictures-section {
-         display: flex; 
+         display: flex;
          justify-content: space-between;
          gap: 40px;
          margin: 40px 30px;
@@ -319,7 +321,6 @@
 
        .resume-link a {
          color: #FFFFFF;
-         text-decoration: none;
          font-size: 24px;
          font-family: "Rubik", sans-serif;
        }
@@ -340,20 +341,11 @@
          background: linear-gradient(to right, #FF360C, #FFD800);
          width: 250px;
          height: 150px;
-         border-radius: 12px;
          display: flex;
-         flex-direction: column;
          justify-content: center;
          align-items: center;
          text-align: center;
          padding: 20px;
-       }
-
-       .contact-title {
-         font-family: "Monoton", sans-serif;
-         font-size: 22px;
-         color: #000000;
-         margin-bottom: 10px;
        }
 
        .contact-link {
@@ -424,10 +416,10 @@
          <div class="skill-box">Photoshop</div>
        </div>
        <div class="skills-description">
-         I bring a strong mix of visual design, digital creativity, and problem-solving to my work.
+         <p>I bring a strong mix of visual design, digital creativity, and problem-solving to my work.
          My skills range from branding, illustration, and layout design to interactive media and digital art.
          I’m experienced with Adobe Creative Cloud, Figma, and web-based tools, and I enjoy using design thinking
-         to turn ideas into polished, engaging visuals. I’m always exploring new techniques.
+         to turn ideas into polished, engaging visuals. I’m always exploring new techniques.  </p>
        </div>
        <div class="line"></div>
 
@@ -436,11 +428,11 @@
 
        <div id="projects" class="section-title">Projects</div>
        <div class="projects-description">
-         My projects show my interest in both editorial and digital design.
+        <p> My projects show my interest in both editorial and digital design.
          I created Irreplaceable, a magazine that focuses on identity and uses clean layouts
-         and visuals to tell a story. I also redesigned a website for \Kentucky, giving it a more
+         and visuals to tell a story. I also redesigned a website for Kentucky, giving it a more
          modern look and making it easier to navigate. These projects reflect my style and the design
-         skills I’m continuing to grow.
+         skills I’m continuing to grow.  </p>
        </div>
 
        <img src="Picture41.png" alt="Picture 41" class="Picture41">
@@ -469,7 +461,8 @@
          <img src="Picture7.png" alt="Laptop Mockup" class="laptop-image">
 
          <div class="laptop-text">
-           For my Kentucky website redesign, I focused on giving the brand a fresher and more modern look. I improved the layout to make information easier to find and created a cleaner visual style with updated colors, typography, and images. My goal was to make the site feel more organized, welcoming, and user-friendly while still keeping the original identity of Kentucky. This project helped me explore web design, visual hierarchy, and how small design decisions can make a website much easier to use.
+           <p>
+             For my Kentucky website redesign, I focused on giving the brand a fresher and more modern look. I improved the layout to make information easier to find and created a cleaner visual style with updated colors, typography, and images. My goal was to make the site feel more organized, welcoming, and user-friendly while still keeping the original identity of Kentucky. This project helped me explore web design, visual hierarchy, and how small design decisions can make a website much easier to use. </p>
          </div>
        </div>
 
@@ -488,24 +481,24 @@
          <img src="Picture13.png" alt="Picture 13">
        </div>
        <div class="project2-description">
-         My Kentucky website redesign focused on bringing more clarity and personality to the brand’s online presence. I reorganized the pages to make information easier to explore and introduced a layout that feels more open and approachable. I also refreshed the visuals by choosing cleaner fonts, brighter images, and a more consistent style. The redesign aims to make the site feel welcoming, modern, and easier for users to connect with.</div>
+          <p>
+            My Kentucky website redesign focused on bringing more clarity and personality to the brand’s online presence. I reorganized the pages to make information easier to explore and introduced a layout that feels more open and approachable. I also refreshed the visuals by choosing cleaner fonts, brighter images, and a more consistent style. The redesign aims to make the site feel welcoming, modern, and easier for users to connect with. </p></div>
        <img src="Picture41.png" alt="Picture 41" class="Picture41">
 
        <div class="Resume">Resume</div>
 
        <div class="resume-link">
-         <i> <a href="Kendyl_Gill_Resume.pdf" target="_blank">Kendyl's Resume</a></i>
+         <a href="Kendyl_Gill_Resume.pdf" target="_blank">Kendyl's Resume</a>
        </div>
        <img src="Picture41.png" alt="Picture 41" class="Picture41">
        <div id="contact" class="Contact-Me">Contact Me</div>
        <div class="contact-boxes">
          <div class="contact-box">
-           <div class="contact-title">Email Address</div>
+
            <a href="mailto:k24gill@uwaterloo.ca" class="contact-link">k24gill@uwaterloo.ca</a>
          </div>
 
          <div class="contact-box">
-           <div class="contact-title">LinkedIn</div>
            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="contact-link">LinkedIn Profile</a>
          </div>
 
